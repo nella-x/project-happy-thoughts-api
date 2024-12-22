@@ -83,6 +83,28 @@ app.post("/thoughts/:thoughtId/like", async (req, res) => {
   }
 });
 
+// GET /endpoints - Documentation
+app.get("/endpoints", (req, res) => {
+  const apiDocumentation = [
+    {
+      path: "/",
+      methods: ["GET"],
+      middleware: ["anonymous"],
+    },
+    {
+      path: "/thoughts",
+      methods: ["GET", "POST"],
+      middleware: ["anonymous"],
+    },
+    {
+      path: "/thoughts/:thoughtId/like",
+      methods: ["POST"],
+      middleware: ["anonymous"],
+    },
+  ];
+  res.status(200).json(apiDocumentation);
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);

@@ -1,13 +1,13 @@
 # Project Happy Thoughts API
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is the backend for the Happy Thoughts project, a simple API that enables users to share their positive thoughts and like thoughts posted by others. The goal is to create a functional and accessible API using modern web development technologies.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The goal of this project was to create an API that allows users to share positive thoughts and like others' posts. To achieve this, I used Express.js for server-side logic, MongoDB with Mongoose for data storage and validation, and dotenv for environment variables. The API includes endpoints to post new thoughts, fetch the 20 most recent thoughts, and like posts, with sorting and error handling to ensure a smooth experience.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://project-happy-thoughts-api-oq4w.onrender.com/
+
+check /endpoints for documentation
